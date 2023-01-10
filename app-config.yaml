@@ -29,7 +29,7 @@ backend:
   # The production database configuration is stored in app-config.production.yaml
   database:
     client: better-sqlite3
-    connection: ':memory:'
+    connection: ':memory:' 
   cache:
     store: memory
   # workingDirectory: /tmp # Use this to configure a working directory for the scaffolder, defaults to the OS temp-dir
@@ -102,3 +102,8 @@ catalog:
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+zeptor :
+  clientId: my-app
+  brokers: ['localhost:9092']
+  groupId: 'test-group'
+  topic: 'quickstart-events'
